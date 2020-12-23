@@ -1,4 +1,5 @@
 class Prototype < ApplicationRecord
+
   has_one_attached :image
   belongs_to :user
   has_many :comments,dependent: :destroy
@@ -7,4 +8,5 @@ class Prototype < ApplicationRecord
   validates :catch_copy, presence: true
   validates :concept, presence: true  
   validates :image, presence: true
+
 end
